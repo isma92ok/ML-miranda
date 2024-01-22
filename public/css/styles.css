@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EAC926;
+}
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 20px;
+}
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.nav-item {
+    margin: 0 10px 10px 0; 
+}
+
+body{
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #ebebeb;
+    /*background-image: url('/public/img/img-home-banner.jpg'); para poner una imagen detras*/
+    /*background-repeat: no-repeat; para no repetir la imagen del comando anterior*/
+    /*background-size: 520px; para la resolucion de la imagen*/
+}
+
+#logo{
+    width: 40%;
+    box-sizing: border-box;
+
+}
+#logo2{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container, .search-bar-container {
+    width: 80%;
+    box-sizing: border-box;
+    margin: right 10px;;
+}
+
+/* barra de búsqueda */
+form {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+input {
+    width: 70%;
+    padding: 5px;
+}
+
+button {
+    width: 40%;
+    padding: 5px;
+}
+
+h1{
+    font-family:'roboto';
+    font-size: 12px;
+    text-align: center;
+}
+h2{
+    font-family:'roboto';
+    font-size: 16px;
+    text-align: center;
+}
+
+h3{
+    font-family:'roboto';
+    font-size: 12px;
+    text-align: center;
+}
+
+p{
+    font-family:'roboto';
+    font-size: 12px;
+    text-align: center;
+}
+.p1{
+    font-family:'roboto';
+    font-size: 18px;
+    text-align: justify;
+}
+.p2{
+    font-family:'roboto';
+    font-size: 16px;
+    text-align: justify;
+    color: #39b54a;
+}
+.p3{
+    font-family:'roboto';
+    font-size: 16px;
+    text-align:justify;
+}
+.burger-menu{
+    text-align: center;
+}
+.iconosheader{
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+.iconosheader i {
+    font-size: 2em;
+    color: #03264C;
+}
+
+/* main */
+
+section article {
+    margin-bottom: 20px;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 50%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color:wi
+}
+article div {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+/**/
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-desc-box {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: calc(50% - 20px); 
+    margin-bottom: 20px;
+    margin-right: 20px; 
+}
+
+
+/* Footer */
+.iconosfooter{
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+
+.iconosfooter i {
+    font-size: 2em;
+    color: #03264C;
+}
+
+
+/* Estilos los tamaños de pantalla */
+@media screen and (min-width: 361px) {
+    /* Ajustes específicos para tablets */
+    section article {
+        margin-bottom: 15px; /* Ajuste específico para tablets */
+    }
+    nav ul, .lista {
+        display: none;
+    }
+    article {
+        width:auto; /* Ocupa el ancho completo en dispositivos móviles */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Ajustes específicos para desktop */
+
+    nav ul, .lista {
+        display: flex;
+    }
+    .iconosheader {
+        display: none;
+    }
+    .product-desc-box {
+        width: calc(25% - 20px); /* Cuatro artículos por fila en desktop */
+    }
+
+}
+
+/*estilo para el icono del camion*/
+.bi-truck {
+    font-size: 24px;
+    color: #ebebeb;
+    background-color: #39b54a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/*para sombrear y ocultar con el mouse*/
+
+.product-desc-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-desc-box:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-desc-box div {
+    transform: translateY(0%);
+    transition: transform 0.3s ease;
+}
+
+.product-desc-box:hover div {
+    transform: translateY(0);
+}
+
+
+.product-desc-box:hover .bi-truck {
+    transform: rotate(360deg);
+}
+
+

@@ -24,6 +24,10 @@ header{
     list-style: none;
     padding: 0;
 }
+.lista a{
+    text-decoration: none;
+    color: black;
+}
 .nav-item {
     margin: 0 10px 10px 0; 
 }
@@ -39,6 +43,7 @@ body{
 #logo{
     width: 40%;
     box-sizing: border-box;
+    justify-content: space-between;
 
 }
 #logo2{
@@ -46,10 +51,23 @@ body{
     box-sizing: border-box;
 }
 
-.logo-container, .search-bar-container {
-    width: 80%;
+.search-bar-container {
+    width: 50%;
     box-sizing: border-box;
     margin: right 10px;;
+}
+
+.logo-container {
+    width: 50%;
+    box-sizing: border-box;
+    align-items:flex-start;
+
+}
+.text-nav{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* barra de búsqueda */
@@ -78,7 +96,7 @@ h1{
 h2{
     font-family:'roboto';
     font-size: 16px;
-    text-align: center;
+    text-align:center;
 }
 
 h3{
@@ -120,6 +138,8 @@ p{
     font-size: 2em;
     color: #03264C;
 }
+
+
 
 /* main */
 
